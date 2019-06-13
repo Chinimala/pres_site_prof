@@ -1,0 +1,105 @@
+<!--presentation.html
+Rôle : Présentation du site web pour cours particulier
+Création le 09/06/2019-->
+
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8" />
+        <title>Présentation</title>
+		<style>
+			body{font-size: 1.2em;  max-width: 1200px; margin-left: auto; margin-right: auto; padding-left: 10px; padding-right: 10px; margin-bottom: 50px;}
+			header{text-align: center;}
+			header h1{margin-bottom: 10px;}
+			header p{margin-top: 0;}
+			section{margin-top: 50px; text-align: justify;}
+			section h2{margin: 0;}
+		</style>
+    </head>
+    <body>
+		<header>
+			<h1>Présentation de mon site pour professeur particulier</h1>
+			<p>Par A. Allemandou (alias Chinimala)</p>
+		</header>
+		
+		<p>Bonjour ! Je vais vous présenter le site que j'ai codé ces derniers mois, tel qu'il est en ce mois de juin 2019. C'est une application qui permet à un professeur particulier de :</p>
+		<ul>
+			<li><strong>S'organiser</strong>, grâce à un agenda en ligne</li>
+			<li>Enregistrer et <strong>accéder aux coordonnées</strong> de ses clients</li>
+			<li><strong>Echanger</strong> avec ses clients et ses élèves directement sur l'emploi du temps</li>
+			<li>Editer automatiquement des <strong>factures</strong> pour ses clients CESU</li>
+		</ul>
+		<p>Par ici pour la visite !</p>
+		
+		<section>
+			<h2>Connexion</h2>
+			<p>C'est un site privé, le passage par une connexion est donc obligatoire. Je peux rentrer mon nom complet, mon adresse e-mail ou mon numéro de téléphone. Connectons-nous sur le compte du professeur.</p>
+			<div style="text-align: center;"><video src="videos/connexion.mp4" controls width="100%" preload="metadata">Votre navigateur n'a pas pu lire la vidéo !</video></div>
+		</section>
+		
+		<section>
+			<h2>Agenda</h2>
+			<p>Dans le menu à gauche, nous pouvons accéder à plusieurs catégories. Nous verrons la page d'accueil ultérieurement. Commençons avec l'agenda.</p>
+			<p>L'agenda présente l'emploi du temps du professeur. Pour aller d'une page à une autre, nous pouvons cliquer sur les flèches à gauche ou appuyer sur les flèches du clavier. Avec les boutons à droite, nous accédons à aujourd'hui ou à une autre date choisie.</p>
+			<p>Le professeur peut créer des cours, proposer des cours à ses élèves qui peuvent les accepter, et ses élèves peuvent aussi lui proposer des cours. En validant des cours, le professeur confirme qu'il a eu lieu et cela l'aide à établir ses factures.</p>
+			<p>Lorsque le professeur sélectionne un élève pour qui proposer un cours, le temps est initialisé à la durée du dernier cours avec cet élève. La modification de cours est rapide. Un système de Drag&Drop permet de déplacer un cours directement sur l'agenda.</p>
+			<div style="text-align: center;"><video src="videos/agenda.mp4" poster="videos/poster_agenda.png" controls width="100%" preload="metadata">Votre navigateur n'a pas pu lire la vidéo !</video></div>
+		</section>
+		
+		<section>
+			<h2>Messagerie</h2>
+			<p>Le site possède une messagerie classique. Les élèves ne peuvent entamer une conversation qu'avec le professeur, tandis que le professeur peut choisir une liste de destinataires. Il peut aussi modifier les participants d'une conversation en cours.</p>
+			<p>Lorsque le professeur archive une conversation, plus personne ne peut y répondre et les élèves peuvent la supprimer aussi.</p>
+			<div style="text-align: center;"><video src="videos/messagerie.mp4" poster="videos/poster_messagerie.png" controls width="100%" preload="metadata">Votre navigateur n'a pas pu lire la vidéo !</video></div>
+		</section>
+		
+		<section>
+			<h2>Gestion des clients et élèves</h2>
+			<p>L'onglet suivant montre une liste des clients enregistrés (les parents) et de leurs élèves. Nous y voyons leurs noms, ville (ici floutée par l'anonymat), date de dernière connexion et autres informations. Le professeur peut enregistrer des clients, des élèves pour ce client et des élèves non associés à un client.</p>
+			<p>Pour chaque client et élève, il peut enregistrer autant de coordonnées qu'il le souhaite. Ici, il décide de préciser que cette adresse e-mail (qui servira pour envoyer les factures) est celle de la mère, et d'ajouter le numéro de téléphone du père.</p>
+			<p>Un client est archivable. Il disparaît alors du site, sauf dans la liste des clients si le professeur clique sur l'icone d'archives. Il peut alors retourner voir ses coordonnées et le sortir des archives.</p>
+			<div style="text-align: center;"><video src="videos/clients.mp4" poster="videos/poster_clients.png" controls width="100%" preload="metadata">Votre navigateur n'a pas pu lire la vidéo !</video></div>
+		</section>
+		
+		<section>
+			<h2>Factures</h2>
+			<p>La partie factures est la plus utile car c'est elle qui effectue les calculs à partir de toutes les données enregistrées pour produire une facture déjà mise en page.</p>
+			<p>En cliquant sur "Générer une nouvelle facture" et en choisissant un client, tous les cours des élèves de ce client du mois dernier sont automatiquement ajoutés depuis l'agenda à la facture. Les totaux sont calculés à l'aide des frais de déplacement et du tarif horaire qui ont été enregistrés dans les fiches clients et élèves. Comme les heures sont déclarées entières en CESU, les minutes supplémentaires sont reportées à la facture suivante comme reliquat. Le professeur peut changer la période de calcul, introduire ou supprimer des cours et ajouter des frais ou un reliquat manuellement.</p>
+			<p>Une fois la facture enregistrée (ce qui se fait généralement en deux clics), le professeur peut l'envoyer aux adresses e-mail enregistrées pour ce client et suivre son paiement et sa déclaration par le client.</p>
+			<div style="text-align: center;"><video src="videos/factures.mp4" poster="videos/poster_factures.png" controls width="100%" preload="metadata">Votre navigateur n'a pas pu lire la vidéo !</video></div>
+		</section>
+		
+		<section>
+			<h2>Accueil</h2>
+			<p>L'accueil présente le propriétaire du site, les nouveautés pour l'utilisateur avec des actions effectuables en direct, la messagerie et, pour le professeur, les factures à faire. Cliquer sur une nouveauté envoie sur la page correspondante de l'agenda. Cliquer sur un nom de client dans la dernière partie amène à la création de facture avec le client pré-sélectionné.</p>
+			<div style="text-align: center;"><img src="videos/accueil.png" width="100%"></img></div>
+		</section>
+		
+		<section>
+			<h2>Paramétrage</h2>
+			<p>Les deux derniers onglets (avant le bouton de déconnexion) servent à paramétrer respectivement son compte (pour tout le monde) ou le site en général (pour le professeur seulement).</p>
+			<p>Dans mon compte, je peux changer mon mot de passe et définir mes préférences de réception des e-mails.</p>
+			<p>Le professeur peut changer les couleurs du site, déterminer l'étendue horaire de l'agenda et écrire le corps par défaut du mail d'envoi de factures. </p>
+			<div style="text-align: center;"><video src="videos/parametres.mp4" poster="videos/poster_parametres.png" controls width="100%" preload="metadata">Votre navigateur n'a pas pu lire la vidéo !</video></div>
+		</section>
+		
+		<section>
+			<h2>Vues client et élève</h2>
+			<p>Avant de changer leur mot de passe via leur compte, les élèves se connectent avec leur date de naissance comme mot de passe. Il suffit donc que le professeur enregistre un élève et sa date de naissance pour qu'il puisse se connecter.</p>
+			<p>Pour qu'un client puisse se connecter, le professeur doit lui envoyer un lien (comportant une clé) qu'il trouve dans la fiche client. Ce lien permet au client de définir son premier mot de passe.</p>
+			<p>Sur l'agenda, les noms des autres élèves sont cachés. Seule la ville où se trouve le professeur apparaît, pour que les autres élèves puissent faire des propositions adaptées à ses déplacements.</p>
+			<div style="text-align: center;"><video src="videos/vue_eleve.mp4" poster="videos/vue_eleve.png" controls width="100%" preload="metadata">Votre navigateur n'a pas pu lire la vidéo !</video></div>
+		</section>
+		
+		<section>
+			<h2>Notes diverses</h2>
+			<ul>
+				<li>Le site est sécurisé : adresse en https://, protection contre les failles XXS</li>
+				<li>Il a été commencé en février 2019, mis en ligne en avril 2019 et il est toujours en développement.</li>
+				<li>L'utilisateur actuel est Gildas Le Tallec, professeur de mathématiques dans le sud de l'Indre et Loire et le nord de la Vienne.</li>
+				<li>C'est mon premier site web. Il est codé avec Javascript et PHP et j'ai beaucoup appris sur deux langages ainsi que sur le CSS en le réalisant.</li>
+				<li>Tous les noms utilisés dans cette présentation sont fictifs.</li>
+			</ul>
+		</section>
+	</body>
+</html>
